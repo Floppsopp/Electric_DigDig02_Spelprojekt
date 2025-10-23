@@ -106,4 +106,10 @@ public class enemy1Script : MonoBehaviour
         isAttacking = false;
         isInRange = false;
     }
+
+    public void TakeDamage(float damage)
+    {
+        Enemy1CurrentHealth -= damage;
+        Debug.Log(Enemy1CurrentHealth);
+    }
 }
