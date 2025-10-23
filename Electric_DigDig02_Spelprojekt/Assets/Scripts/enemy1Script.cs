@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class enemy1Script : MonoBehaviour
 {
@@ -21,10 +22,15 @@ public class enemy1Script : MonoBehaviour
     public float Enemy1Maxhealth = 1f;
     public float Enemy1CurrentHealth;
 
+    [Header("Hitbox")]
+    public GameObject Enemy1AttackHitbox;
+
+
     private Coroutine attackRoutine;
     private void Start()
     {
         Enemy1CurrentHealth = Enemy1Maxhealth;
+        Enemy1AttackHitbox.SetActive(false);
     }
     void Update()
     {
@@ -86,10 +92,18 @@ public class enemy1Script : MonoBehaviour
     {
         isAttacking = true;
 
+       
+        if (Enemy1AttackHitbox != null)
+            Enemy1AttackHitbox.SetActive(true);
 
+       
         yield return new WaitForSeconds(attackDuration);
 
+        if (Enemy1AttackHitbox != null)
+            Enemy1AttackHitbox.SetActive(false);
+
+
         isAttacking = false;
-        isInRange = false; 
+        isInRange = false;
     }
 }
