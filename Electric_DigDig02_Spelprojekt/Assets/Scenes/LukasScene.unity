@@ -342,7 +342,7 @@ TerrainCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 8b32a7667d85c6c4b9476b6111275931, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: d376668a18f6e5241a1f93998bd6fd3e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &750641080
 Terrain:
@@ -353,9 +353,9 @@ Terrain:
   m_GameObject: {fileID: 750641078}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 8b32a7667d85c6c4b9476b6111275931, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: d376668a18f6e5241a1f93998bd6fd3e, type: 2}
   m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
+  m_TreeBillboardDistance: 5
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
@@ -393,7 +393,7 @@ Transform:
   m_GameObject: {fileID: 750641078}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -45.5, y: -0.7, z: -41.83}
+  m_LocalPosition: {x: -50, y: -0.87, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2059,6 +2059,7 @@ GameObject:
   - component: {fileID: 1605480459}
   - component: {fileID: 1605480458}
   - component: {fileID: 1605480460}
+  - component: {fileID: 1605480461}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2140,6 +2141,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy1: {fileID: 967189797}
   enemyMaxHealth: 100
+--- !u!114 &1605480461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605480456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19896aa18fa05984398cd3316dfc9a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBlocking: 0
+  damageReduction: 1
 --- !u!1 &1727842266
 GameObject:
   m_ObjectHideFlags: 0
