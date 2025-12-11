@@ -6,12 +6,12 @@ using UnityEngine;
 public class playerBlockAttack : MonoBehaviour
 {
    
-    public bool isBlocking = false; // Checks if player is blocking or not.
-    public int damageReduction = 1; // Reduces damage by 80%
+    public bool isBlocking = false; 
+    public int damageReduction = 1; // Reduces damage by 1
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButton(1)) // Checks if player is blocking or not.
         {
             isBlocking = true;
         }

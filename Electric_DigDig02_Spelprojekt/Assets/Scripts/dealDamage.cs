@@ -9,7 +9,7 @@ public class dealDamage : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButton(0))
+        if(Input.GetMouseButton(0)) // Checks if player is pressing mouse0 (Left Click) and sets bool to true or false, depending on if it's pressed or not.
         {
             Attacking = true;
         }
@@ -20,7 +20,7 @@ public class dealDamage : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0)) // Checks if mouse0 (Left Click) is pressed
          {
             
 
