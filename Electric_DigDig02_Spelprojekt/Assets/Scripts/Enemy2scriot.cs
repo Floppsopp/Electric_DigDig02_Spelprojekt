@@ -14,13 +14,12 @@ public class enemy2Script : MonoBehaviour
     [Header("Ranged Attack")]
     public GameObject projectilePrefab;
     public Transform firePoint;
-    public float shootForce = 20f;
     public float attackCooldown = 2f;
 
     private bool canShoot = true;
 
     [Header("Health")]
-    public float Enemy2Maxhealth = 10f;
+    public float Enemy2Maxhealth = 1f;
     public float Enemy2CurrentHealth;
 
     void Start()
@@ -36,14 +35,14 @@ public class enemy2Script : MonoBehaviour
         direction.y = 0f;
         float distanceToTarget = direction.magnitude;
 
-        // Rotate toward player
+
         if (direction.sqrMagnitude > 0.01f)
         {
             Quaternion rotation = Quaternion.LookRotation(direction);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
         }
 
-        // Movement & Shooting logic
+       
         if (distanceToTarget > stopDistance)
         {
             transform.position = Vector3.MoveTowards(transform.position, target.position, followSpeed * Time.deltaTime);
@@ -62,8 +61,6 @@ public class enemy2Script : MonoBehaviour
     {
         canShoot = false;
         GameObject bullet = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
-        Rigidbody rb = bullet.GetComponent<Rigidbody>();
-        rb.AddForce(firePoint.forward * shootForce, ForceMode.Impulse);
 
         yield return new WaitForSeconds(attackCooldown);
         canShoot = true;
