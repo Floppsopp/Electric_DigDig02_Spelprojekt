@@ -5,13 +5,24 @@ using UnityEngine;
 public class dealDamage : MonoBehaviour
 {
     [SerializeField] private float damage;
+    public bool Attacking = false;
 
-
+    void Update()
+    {
+        if(Input.GetMouseButton(0))
+        {
+            Attacking = true;
+        }
+        else
+        {
+            Attacking = false;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (Input.GetMouseButton(0))
          {
-
+            
 
             // Compares the tag on collision (Must match Enemy_1)
             if (other.CompareTag("Enemy_1"))
