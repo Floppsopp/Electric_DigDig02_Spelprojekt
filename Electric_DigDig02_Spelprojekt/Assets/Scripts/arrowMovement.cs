@@ -6,7 +6,7 @@ public class ProjectileMovement : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject,5f);
+        Destroy(gameObject, 5f);
     }
 
     void Update()
@@ -19,7 +19,16 @@ public class ProjectileMovement : MonoBehaviour
         if (other.CompareTag("Enemy_2"))
             return;
 
-        Destroy(gameObject);
-    }
+        if (other.CompareTag("Player"))
+        {
+            playerHealth player = other.GetComponent<playerHealth>();
+            if (player != null)
+            {
+                player.playerCurrentHealth -= 1;
+            }
+            Destroy(gameObject);
+        }
 
+
+    }
 }
