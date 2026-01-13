@@ -15,7 +15,7 @@ public class playerHealth : MonoBehaviour
     }
     void Update()
     {
-        if (playerCurrentHealth == 0)
+        if (playerCurrentHealth <= 0)
             Destroy(gameObject);
     }
 }
