@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4296487238918675963}
   - component: {fileID: 2313545184417250595}
   - component: {fileID: 5987653742688334855}
-  - component: {fileID: 1797207433315776763}
+  - component: {fileID: -8565146854993455463}
   m_Layer: 0
   m_Name: Enemy1 1
   m_TagString: Enemy_1
@@ -137,7 +137,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &1797207433315776763
+--- !u!114 &-8565146854993455463
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,18 +146,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 904522377149986701}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a6990de03ae942478eab8015bb1cd01, type: 3}
+  m_Script: {fileID: 11500000, guid: d74c5cd7c3fa4a24780c09dd70bb6020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  followSpeed: 2
-  rotationSpeed: 2
-  stopDistance: 1.5
-  isAttacking: 0
-  attackDuration: 1
-  Enemy1Maxhealth: 1
-  Enemy1CurrentHealth: 0
-  Enemy1AttackHitbox: {fileID: 7685549263184201419}
+  enemyPrefab: {fileID: 0}
+  spawnPoint: {fileID: 0}
+  playerTarget: {fileID: 0}
 --- !u!1 &7685549263184201419
 GameObject:
   m_ObjectHideFlags: 0
