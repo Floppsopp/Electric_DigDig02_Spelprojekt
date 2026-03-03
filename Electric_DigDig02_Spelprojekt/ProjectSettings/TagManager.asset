@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy_1
   - Enemy_2
+  - Wave_Trigger
   layers:
   - Default
   - TransparentFX
