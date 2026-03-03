@@ -9,8 +9,13 @@ public class WaveManager : MonoBehaviour
     public float spawnDelay = 10f;
 
     private RoomController activeRoom;
+    public int highestWave = 0;
 
-    private void Awake()
+    private void Start()
+    {highestWave = PlayerPrefs.GetInt("HighestWave", 0); }
+
+
+        private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
@@ -24,6 +29,13 @@ public class WaveManager : MonoBehaviour
     public void TriggerNextWave()
     {
         currentWave++;
+
+        if (currentWave > highestWave)
+        {
+            highestWave = currentWave;
+            PlayerPrefs.SetInt("HighestWave", highestWave);
+            PlayerPrefs.Save();
+        }
 
         int effectiveWave = ((currentWave - 1) % 15) + 1;
 
@@ -50,4 +62,5 @@ public class WaveManager : MonoBehaviour
             trigger.ResetTrigger();
         }
     }
+
 }
