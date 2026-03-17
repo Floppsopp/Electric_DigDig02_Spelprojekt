@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,19 +17,19 @@ public class weaponPickUp : MonoBehaviour
 
     void PickupWeapon()
     {
-        // Spara världstransform
+        // Spara vÃ¤rldstransform
         Vector3 worldPos = weapon.transform.position;
         Quaternion worldRot = weapon.transform.rotation;
         Vector3 worldScale = weapon.transform.lossyScale;
 
-        // Sätt parent MEN behåll world transform
+        // SÃ¤tt parent MEN behÃ¥ll world transform
         weapon.transform.SetParent(weaponHolder, true);
 
-        // Återställ position/rotation relativt handen
+        // Ã…terstÃ¤ll position/rotation relativt handen
         weapon.transform.localPosition = Vector3.zero;
         weapon.transform.localRotation = Quaternion.identity;
 
-        // ?? Viktigaste delen: fixa skalan så den ser likadan ut
+        // ðŸ”¥ Viktigaste delen: fixa skalan sÃ¥ den ser likadan ut
         Vector3 parentScale = weaponHolder.lossyScale;
 
         weapon.transform.localScale = new Vector3(
