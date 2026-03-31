@@ -17,19 +17,19 @@ public class weaponPickUp : MonoBehaviour
 
     void PickupWeapon()
     {
-        // Spara världstransform
+        // Sparar world transform
         Vector3 worldPos = weapon.transform.position;
         Quaternion worldRot = weapon.transform.rotation;
         Vector3 worldScale = weapon.transform.lossyScale;
 
-        // Sätt parent MEN behåll world transform
+        // Sätter parent pch behåller world transform
         weapon.transform.SetParent(weaponHolder, true);
 
-        // Återställ position/rotation relativt handen
+        // Återställer position/rotation relativt handen
         weapon.transform.localPosition = Vector3.zero;
         weapon.transform.localRotation = Quaternion.identity;
 
-        // 🔥 Viktigaste delen: fixa skalan så den ser likadan ut
+        // fixar skalan så den ser likadan ut
         Vector3 parentScale = weaponHolder.lossyScale;
 
         weapon.transform.localScale = new Vector3(
@@ -38,7 +38,8 @@ public class weaponPickUp : MonoBehaviour
             worldScale.z / parentScale.z
         );
 
-        // Ta bort trigger-kuben (pickupen)
+        // Tar bort trigger och vapen när vapen plockats upp.
         Destroy(gameObject);
     }
+    
 }
