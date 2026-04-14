@@ -35,7 +35,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 50
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -84,7 +84,112 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Exporttpose(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone6
+      parentName: Exporttpose(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root
+      parentName: Exporttpose(Clone)
+      position: {x: -0.0000051708553, y: 0.005270303, z: 0.00020688689}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "\xF6verkropp"
+      parentName: Root
+      position: {x: -0, y: 0.002953712, z: -3.469448e-20}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nacke
+      parentName: "\xF6verkropp"
+      position: {x: 0.0000343455, y: 0.0027819844, z: -0.0000825775}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "H\xF6ger_arm"
+      parentName: "\xF6verkropp"
+      position: {x: 0.0013371012, y: -0.0002742027, z: 1.3509975e-10}
+      rotation: {x: -0.60895663, y: 0.007575926, z: -0.005724845, w: 0.79314667}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: "\xD6vre_arm"
+      parentName: "H\xF6ger_arm"
+      position: {x: 0.0028962458, y: 0.00011900002, z: -2.2204466e-18}
+      rotation: {x: -0.000000029802322, y: 9.313226e-10, z: 9.313226e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Handled
+      parentName: "\xD6vre_arm"
+      position: {x: 0.0030549252, y: -0.000039650007, z: 0.000030549498}
+      rotation: {x: -0, y: -0, z: 2.7755576e-17, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: joint1
+      parentName: Handled
+      position: {x: 0.006959038, y: 0.000013834297, z: 0.000092765156}
+      rotation: {x: 1, y: 0, z: -0, w: 6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "V\xE4nster_arm"
+      parentName: "\xF6verkropp"
+      position: {x: -0.0013370994, y: -0.0002742027, z: 1.3509975e-10}
+      rotation: {x: 0.7362213, y: 0.005314843, z: 0.0024464272, w: 0.6767156}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: "\xD6vre_arm"
+      parentName: "V\xE4nster_arm"
+      position: {x: -0.0028962458, y: -0.00011900002, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: Handled
+      parentName: "\xD6vre_arm"
+      position: {x: -0.003054935, y: 0.000039650007, z: -0.000030549498}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: joint1
+      parentName: Handled
+      position: {x: -0.006959052, y: -0.00001385, z: -0.000012350554}
+      rotation: {x: -1, y: 0.0000000013969839, z: -0, w: -0.000000059601916}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: "H\xF6ger_ben"
+      parentName: Root
+      position: {x: 0.000796601, y: -0.0014416908, z: 1.3509975e-10}
+      rotation: {x: 0.77655154, y: -0.0018136024, z: 0.6300383, w: -0.0040299315}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: "L\xE5r"
+      parentName: "H\xF6ger_ben"
+      position: {x: 0.00026465004, y: 0.0018714501, z: -2.4286126e-19}
+      rotation: {x: 0.0010341451, y: -0.00014021542, z: 0.0056282887, w: 0.9999836}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: "Kn\xE4"
+      parentName: "L\xE5r"
+      position: {x: 0.000032163898, y: 0.0015150016, z: 0.000043347754}
+      rotation: {x: 0.022457492, y: 0.9032137, z: -0.0038188377, w: 0.42858627}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: joint2
+      parentName: "Kn\xE4"
+      position: {x: -0.000004079271, y: 0.007146304, z: 0.0001763375}
+      rotation: {x: 1, y: 0, z: -0, w: 6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "H\xF6ger_ben1"
+      parentName: Root
+      position: {x: -0.0007965992, y: -0.0014416908, z: 1.3509975e-10}
+      rotation: {x: -0.0070113433, y: 0.6254957, z: -0.016130295, w: 0.7800294}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "L\xE5r"
+      parentName: "H\xF6ger_ben1"
+      position: {x: -0.00030668295, y: -0.0018729008, z: 0.0000092629825}
+      rotation: {x: 0.0014215522, y: -0.00018668175, z: 0.0071992534, w: 0.9999731}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: "Kn\xE4"
+      parentName: "L\xE5r"
+      position: {x: 0.00045449703, y: -0.0015197118, z: -0.00015117004}
+      rotation: {x: -0.00990179, y: 0.42103708, z: -0.0066616354, w: 0.90696496}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: joint2
+      parentName: "Kn\xE4"
+      position: {x: 0.0000040750006, y: -0.007146304, z: -0.0001763375}
+      rotation: {x: 1, y: -0, z: 0, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -92,7 +197,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.099999994
+    globalScale: 0.5
     rootMotionBoneName: Root
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-
+    public Animator animator;
     public CharacterController controller;
     public Transform cam;
     
@@ -17,7 +17,7 @@ public class playerMovement : MonoBehaviour
     float turnSmoothVelocity;
 
     // Jumpheight for the player
-    float jumpHeight = 1f;
+    float jumpHeight = 0f;
 
     // gravity and velocity to make the player be grounded when not jumping 
     float gravity = 9.82f;
@@ -60,6 +60,9 @@ public class playerMovement : MonoBehaviour
         move.y = verticalVelocity;
 
         controller.Move(move * Time.deltaTime);
+
+        //Animations
+        animator.SetFloat("speed", direction.magnitude);
     }
 
     //Code for jump function
