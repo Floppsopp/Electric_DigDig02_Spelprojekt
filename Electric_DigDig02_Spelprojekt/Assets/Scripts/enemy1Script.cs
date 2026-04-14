@@ -107,6 +107,12 @@ public class enemy1Script : MonoBehaviour
         isInRange = false;
     }
 
+    public void SetHealth(float newMaxHealth)
+    {
+        Enemy1Maxhealth = newMaxHealth;
+        Enemy1CurrentHealth = newMaxHealth;
+    }
+
     public void TakeDamage(float damage)
     {
         Enemy1CurrentHealth -= damage;

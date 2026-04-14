@@ -76,4 +76,11 @@ public class enemy2Script : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public void SetHealth(float newMaxHealth)
+    {
+        Enemy2Maxhealth = newMaxHealth;
+        Enemy2CurrentHealth = newMaxHealth;
+    }
+
 }
