@@ -6,7 +6,7 @@ public class WaveManager : MonoBehaviour
     public static WaveManager Instance;
 
     public int currentWave = 0;
-    public float spawnDelay = 10f;
+    public float spawnDelay = 2f;
 
     private RoomController activeRoom;
     public int highestWave = 0;
