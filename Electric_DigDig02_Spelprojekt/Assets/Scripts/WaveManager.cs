@@ -52,6 +52,9 @@ public class WaveManager : MonoBehaviour
         {
             activeRoom.SpawnWave(effectiveWave);
         }
+
+        Debug.Log("Active room is: " + activeRoom);
+
     }
 
     public void ResetWaveTriggers()
