@@ -6431,8 +6431,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1264eee7b6af96e4bae5de4ab7dfa385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthImage: {fileID: 0}
-  healthStates: []
+  healthImage: {fileID: 408171268}
+  healthStates:
+  - {fileID: 21300000, guid: 40d180970a5444e4faca439476465c54, type: 3}
+  - {fileID: 21300000, guid: a5cd8ede331e6424ba8432d6b865c364, type: 3}
+  - {fileID: 21300000, guid: 5004cdc7fd80a37469b2e7174c9b47f8, type: 3}
+  - {fileID: 21300000, guid: 69acd301d5cb1494c85a3c185cb36c05, type: 3}
+  - {fileID: 21300000, guid: bbbb5c9aab5c4b04285cedebf96dbe65, type: 3}
+  - {fileID: 21300000, guid: 78d4226ab725b004c9813ff7da63f902, type: 3}
+  - {fileID: 21300000, guid: 63a05d0621e402f439aae54de7c4185d, type: 3}
 --- !u!1 &252103136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7218612099166999407, guid: 159021545cded7845a4b996135215d0d,
