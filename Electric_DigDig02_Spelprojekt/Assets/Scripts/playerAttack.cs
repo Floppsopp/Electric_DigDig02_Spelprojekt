@@ -18,9 +18,9 @@ public class playerAttack : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("F"))
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            anim.SetTrigger(name"attack");
+            anim.SetTrigger("attack");
         }
 
     }

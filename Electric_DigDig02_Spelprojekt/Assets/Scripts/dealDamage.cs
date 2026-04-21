@@ -7,11 +7,13 @@ public class dealDamage : MonoBehaviour
     [SerializeField] private float damage;
     public bool Attacking = false;
 
+
     void Update()
     {
         if(Input.GetMouseButton(0)) // Checks if player is pressing mouse0 (Left Click) and sets bool to true or false, depending on if it's pressed or not.
         {
             Attacking = true;
+           
         }
         else
         {
