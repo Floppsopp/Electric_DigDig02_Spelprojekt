@@ -74,8 +74,10 @@ public class enemy2Script : MonoBehaviour
 
     void Enemy2Die()
     {
+        EnemyTracker.Instance.EnemyDied();
         Destroy(gameObject);
     }
+
 
     public void SetHealth(float newMaxHealth)
     {

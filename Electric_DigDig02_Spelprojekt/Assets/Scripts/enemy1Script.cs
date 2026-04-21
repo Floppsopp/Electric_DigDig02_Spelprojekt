@@ -78,8 +78,10 @@ public class enemy1Script : MonoBehaviour
 
     void Enemy1Die()
     {
+        EnemyTracker.Instance.EnemyDied();
         Destroy(gameObject);
     }
+
     void StartAttack()
     {
         if (attackRoutine != null)
