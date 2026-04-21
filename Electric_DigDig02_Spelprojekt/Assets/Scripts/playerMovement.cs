@@ -63,6 +63,10 @@ public class playerMovement : MonoBehaviour
 
         //Animations
         animator.SetFloat("speed", direction.magnitude);
+        if (Input.GetMouseButtonDown(0)) // vänsterklick
+        {
+            animator.SetTrigger("attack");
+        }
     }
 
     //Code for jump function
