@@ -9,9 +9,10 @@ public class playerAttack : MonoBehaviour
 
     public GameObject enemy1;
     [SerializeField] float enemyMaxHealth;
+    private Animator anim;
     void Start()
     {
-
+        anim = GetComponent<Animator>();
     }
 
 
@@ -19,7 +20,7 @@ public class playerAttack : MonoBehaviour
     {
         if (Input.GetButtonDown("F"))
         {
-            
+            anim.SetTrigger(name"attack");
         }
 
     }

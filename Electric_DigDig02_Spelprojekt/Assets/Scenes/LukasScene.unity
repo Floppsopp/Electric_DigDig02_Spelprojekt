@@ -1860,6 +1860,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.29
       objectReference: {fileID: 0}
+    - target: {fileID: 1835203051688220631, guid: 059d793f10af8ab4d950c95af2546668,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 598d44d126cc11342aae493fe9356f7a, type: 2}
     - target: {fileID: 4702314255396292974, guid: 059d793f10af8ab4d950c95af2546668,
         type: 3}
       propertyPath: cam
