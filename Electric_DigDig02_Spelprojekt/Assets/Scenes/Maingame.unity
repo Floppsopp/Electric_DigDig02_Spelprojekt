@@ -3632,7 +3632,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 904522377149986701, guid: 29b3199c93d0f3f4ba937b7a071b7fe1,
     type: 3}
   spawnPoint: {fileID: 145363921}
-  playerTarget: {fileID: 0}
+  playerTarget: {fileID: 1786468996}
 --- !u!65 &145363918
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9758,7 +9758,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 4605456890068657204, guid: 1ed2f4bcb037d4e48ad683a218d9ea5e,
     type: 3}
   spawnPoint: {fileID: 366326135}
-  playerTarget: {fileID: 0}
+  playerTarget: {fileID: 1786468996}
 --- !u!65 &366326132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10808,7 +10808,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 904522377149986701, guid: 29b3199c93d0f3f4ba937b7a071b7fe1,
     type: 3}
   spawnPoint: {fileID: 419708046}
-  playerTarget: {fileID: 0}
+  playerTarget: {fileID: 1786468996}
 --- !u!65 &419708043
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11352,7 +11352,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 904522377149986701, guid: 29b3199c93d0f3f4ba937b7a071b7fe1,
     type: 3}
   spawnPoint: {fileID: 432338286}
-  playerTarget: {fileID: 0}
+  playerTarget: {fileID: 1786468996}
 --- !u!65 &432338283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11774,7 +11774,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 4605456890068657204, guid: 1ed2f4bcb037d4e48ad683a218d9ea5e,
     type: 3}
   spawnPoint: {fileID: 458823033}
-  playerTarget: {fileID: 0}
+  playerTarget: {fileID: 1786468996}
 --- !u!65 &458823030
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14854,7 +14854,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 4605456890068657204, guid: 1ed2f4bcb037d4e48ad683a218d9ea5e,
     type: 3}
   spawnPoint: {fileID: 560093179}
-  playerTarget: {fileID: 0}
+  playerTarget: {fileID: 1786468996}
 --- !u!65 &560093176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17381,7 +17381,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 4605456890068657204, guid: 1ed2f4bcb037d4e48ad683a218d9ea5e,
     type: 3}
   spawnPoint: {fileID: 642536167}
-  playerTarget: {fileID: 0}
+  playerTarget: {fileID: 1786468996}
 --- !u!65 &642536164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32313,7 +32313,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 4605456890068657204, guid: 1ed2f4bcb037d4e48ad683a218d9ea5e,
     type: 3}
   spawnPoint: {fileID: 1278575599}
-  playerTarget: {fileID: 0}
+  playerTarget: {fileID: 1786468996}
 --- !u!65 &1278575596
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32952,7 +32952,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 904522377149986701, guid: 29b3199c93d0f3f4ba937b7a071b7fe1,
     type: 3}
   spawnPoint: {fileID: 1294994148}
-  playerTarget: {fileID: 0}
+  playerTarget: {fileID: 1786468996}
 --- !u!65 &1294994145
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56067,7 +56067,7 @@ MonoBehaviour:
     type: 3}
   spawnPoint: {fileID: 8667229206931836841, guid: 29b3199c93d0f3f4ba937b7a071b7fe1,
     type: 3}
-  playerTarget: {fileID: 0}
+  playerTarget: {fileID: 1786468996}
 --- !u!65 &1970082284
 BoxCollider:
   m_ObjectHideFlags: 0
