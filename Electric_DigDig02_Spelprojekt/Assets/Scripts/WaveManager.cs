@@ -30,6 +30,9 @@ public class WaveManager : MonoBehaviour
     {
         currentWave++;
 
+        EnemyTracker.Instance.wallToOpen.gameObject.SetActive(true);
+
+
         if (currentWave > highestWave)
         {
             highestWave = currentWave;
