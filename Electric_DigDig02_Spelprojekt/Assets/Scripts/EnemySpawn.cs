@@ -17,6 +17,8 @@ public class EnemySpawner : MonoBehaviour
                 Quaternion.Euler(0f, Random.Range(0f, 360f), 0f)
             );
 
+            EnemyTracker.Instance.RegisterEnemy();
+
             float healthMultiplier = Mathf.Pow(1.02f, WaveManager.Instance.currentWave);
 
 

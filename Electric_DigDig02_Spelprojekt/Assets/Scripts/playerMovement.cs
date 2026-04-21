@@ -63,6 +63,7 @@ public class playerMovement : MonoBehaviour
 
         //Animations
         animator.SetFloat("speed", direction.magnitude);
+
     }
 
     //Code for jump function
