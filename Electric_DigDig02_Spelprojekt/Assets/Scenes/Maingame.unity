@@ -24041,6 +24041,11 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1786468996}
+    - target: {fileID: 1410742784075793805, guid: 4c866fa5dde484347b7929ed14d545a5,
+        type: 3}
+      propertyPath: m_XAxis.m_InvertInput
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2216827760803311372, guid: 4c866fa5dde484347b7929ed14d545a5,
         type: 3}
       propertyPath: m_LocalPosition.x
