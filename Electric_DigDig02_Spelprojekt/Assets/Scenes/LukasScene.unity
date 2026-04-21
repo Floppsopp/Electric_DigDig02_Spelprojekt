@@ -227,12 +227,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 916580291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &686130851 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7953175044559624223, guid: 059d793f10af8ab4d950c95af2546668,
-    type: 3}
-  m_PrefabInstance: {fileID: 1857630506}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &750641078
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,7 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a6990de03ae942478eab8015bb1cd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1465537332}
   followSpeed: 2
   rotationSpeed: 2
   stopDistance: 2
@@ -1503,7 +1497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 947436527}
-  weaponHolder: {fileID: 686130851}
+  weaponHolder: {fileID: 0}
 --- !u!4 &1727842269 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2216827760803311372, guid: 4c866fa5dde484347b7929ed14d545a5,

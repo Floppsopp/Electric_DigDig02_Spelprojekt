@@ -8,6 +8,7 @@ public class playerAttack : MonoBehaviour
 {
 
     private Animator anim;
+    [SerializeField] private Collider weaponCollider;
 
     void Start()
     {
@@ -21,4 +22,5 @@ public class playerAttack : MonoBehaviour
             anim.SetTrigger("attack");
         }
     }
+
 }
