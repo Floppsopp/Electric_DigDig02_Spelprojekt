@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fa0a84e09a46a444b38191fec132b2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1835203051688220631}
   controller: {fileID: 6055896879669559218}
   cam: {fileID: 0}
   Speed: 5
@@ -405,6 +405,12 @@ PrefabInstance:
 --- !u!4 &917889499232809365 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4945402610019687379, guid: 5e3edc6eef1f4ed48963628b4a4848cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 5196422632506288710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1835203051688220631 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 5e3edc6eef1f4ed48963628b4a4848cc,
     type: 3}
   m_PrefabInstance: {fileID: 5196422632506288710}
   m_PrefabAsset: {fileID: 0}
