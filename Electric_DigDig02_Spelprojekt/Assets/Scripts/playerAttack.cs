@@ -9,17 +9,18 @@ public class playerAttack : MonoBehaviour
 
     public GameObject enemy1;
     [SerializeField] float enemyMaxHealth;
+    private Animator anim;
     void Start()
     {
-
+        anim = GetComponent<Animator>();
     }
 
 
     void Update()
     {
-        if (Input.GetButtonDown("F"))
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            
+            anim.SetTrigger("attack");
         }
 
     }
