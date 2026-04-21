@@ -7,21 +7,18 @@ using UnityEngine;
 public class playerAttack : MonoBehaviour
 {
 
-    public GameObject enemy1;
-    [SerializeField] float enemyMaxHealth;
     private Animator anim;
+
     void Start()
     {
         anim = GetComponent<Animator>();
     }
 
-
     void Update()
     {
-        if (Input.GetButtonDown("F"))
+        if (Input.GetMouseButtonDown(0))
         {
-            anim.SetTrigger(name"attack");
+            anim.SetTrigger("attack");
         }
-
     }
 }
